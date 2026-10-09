@@ -4,6 +4,12 @@ Ma configuration de [Claude Code](https://claude.com/claude-code) sous Windows 1
 
 > Principe directeur : peu de briques, choisies pour ne pas se marcher dessus. Chaque skill ou MCP ajouté coûte du contexte à chaque session, donc je n'ajoute que ce qui comble un vrai manque.
 
+## Architecture
+
+![Architecture de mon workflow Claude Code : un prompt traverse Claude Code, cadré par CLAUDE.md, des plugins, des skills et des MCP, puis agit sur serveurs, réseau, code et docs ; des hooks me préviennent](assets/architecture.svg)
+
+Lecture : je tape un prompt, Claude Code charge les briques utiles selon le contexte (règles, plugins, skills, MCP), agit sur la cible, et les hooks me préviennent par un son et une notification quand j'ai fini ou que j'ai besoin de moi.
+
 ## Vue d'ensemble
 
 | Couche | Ce que j'utilise | Rôle |
